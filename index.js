@@ -17,7 +17,7 @@ app.post("/", (req, res) => {
 	var qr_svg = qr.image(url, { type: "svg" });
 	qr_svg.pipe(fs.createWriteStream(__dirname + "/images/qr.svg"));
 
-	res.sendFile(__dirname + "\\" + "url.html");
+	res.sendFile(__dirname + "/url.html");
 });
 
 app.listen(3000, () => {
