@@ -1,0 +1,61 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+			crossorigin="anonymous"
+		/>
+		<title>qr-generator || purnapattela</title>
+		<style>
+			body {
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+			}
+			.wrapper {
+				height: 75vh;
+				width: 100%;
+				background-color: #ffd1da;
+				border-radius: 10px;
+			}
+			.footer {
+				background-color: #ffdbaa;
+				height: 12vh;
+				display: flex;
+				border-radius: 10px;
+				align-items: center;
+				justify-content: center;
+			}
+			.btns {
+				border: 1px solid black;
+				background-color: whitesmoke;
+				margin-top: 10px;
+			}
+		</style>
+	</head>
+	<body class="container text-center p-3 m-3 bd">
+		<div class="wrapper">
+			<h1 class="pt-5">QR generator</h1>
+			<form action="/" method="post" class="py-5">
+				URL :
+				<input type="text" name="url" placeholder="Enter the URL :)" />
+				<button class="btns" type="submit">Get QR</button>
+			</form>
+		</div>
+
+		<footer class="footer">
+			<p class="text-center">
+				Made with ❤️ by
+				<a href="https://purnapattela.github.io">purnapattela</a>
+			</p>
+		</footer>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
